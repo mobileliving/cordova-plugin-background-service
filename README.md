@@ -1,25 +1,13 @@
 BackgroundService
 ==============================
 
+Código adaptado para uma necessidade específica a partir das referências citadas.
+
 ## Installing the plugin ##
 
-```Bash
-$ cordova plugin add cordova-plugin-background-service
-```
-
-## Using the plugin ##
-
-The plugin creates the object `window.BackgroundService` with the methods `start(success, failure, config)`, and `stop(success, failure)`.
-
-```Javascript
-window.BackgroundService.start(
-    function(fn) { dosometing(), fn && fn() },
-    function() { console.log('err') }
-)
-```
+ionic cordova plugin add https://github.com/mobileliving/cordova-plugin-background-service.git
 
 ## Code Refs ##
-
+https://www.npmjs.com/package/cordova-plugin-background-service
 https://github.com/katzer/cordova-plugin-background-mode
-
 https://github.com/transistorsoft/cordova-plugin-background-fetch
