@@ -12,7 +12,7 @@ var androidMode = {
         var callback = function () {
             androidMode.enabled = true;
             timer && clearInterval(timer);
-            timer = setInterval(success, 600000);
+            timer = setInterval(success, 60000);
         };
         cordova.exec(callback, failure, 'BackgroundMode', 'enable', []);
     },
